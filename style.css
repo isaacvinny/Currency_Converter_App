@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body{
+    height: 100vh;
+    font-family: "Fjalla One";
+    background-image: url(images/euro\ to\ bitcoin.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.converter-wrapper{
+    padding: 20px;
+    box-shadow: inset 0 0 15px #000;
+    border-radius: 10px;
+    width: fit-content;
+    background-color: #ffffff;
+}
+.converter-wrapper h1{
+    text-align: center;
+    background-image: -webkit-linear-gradient(0deg,#0000ff,#b21616,#7d74f1,#0000ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+.input-container{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: #0000ff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.input-container input{
+    width: 50%;
+    outline: none;
+    flex: 1;
+    height: 35px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+.input-container select{
+    width: 50%;
+    outline: none;
+    flex: 1;
+    height: 35px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+button{
+    width: 50%;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #0000ff;
+    color: #0000ff;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+button p{
+    font-size: 15px;
+    font-weight: 900;
+}
+button:hover{
+    background-color: #0000ff;
+    color: #fff;
+}
+button:active{
+    scale: 0.9;
+}
+
+@media(max-width: 435px){
+    body{
+        background-position: right;
+        background-size: cover;
+    }
+    .converter-wrapper{
+        width: 90%;
+    }
+}
