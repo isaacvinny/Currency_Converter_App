@@ -183,7 +183,7 @@ async function convertCurrency() {
     const rate = data.conversion_rates[toCu];
     const convertedAmount = amount * rate;
 
-    resultInput.value = convertedAmount;
+    resultInput.value = convertedAmount.toFixed(2);
     
     } catch (error) {
         alert("Error fetching exchange rates. Please try again.");
@@ -210,4 +210,5 @@ function populateCurrencies() {
 populateCurrencies();
 
 convertBtn.addEventListener("click", convertCurrency);
+
 
