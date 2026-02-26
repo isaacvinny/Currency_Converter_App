@@ -187,7 +187,7 @@ async function convertCurrency() {
     resultInput.value = convertedAmount.toFixed(2);
     
     } catch (error) {
-        alert("Error fetching exchange rates. Please try again.");
+        alert("Error fetching exchange rates. Please select your currencies and try again.");
         console.error(error);
     }
 }
@@ -211,6 +211,7 @@ function populateCurrencies() {
 populateCurrencies();
 
 convertBtn.addEventListener("click", convertCurrency);
+
 
 
 
