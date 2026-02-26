@@ -1,4 +1,5 @@
 const currencies = {
+  SLT: "Select a Currency",
   AED: "United Arab Emirates Dirham (AED)",
   AFN: "Afghan Afghani (AFN)",
   ALL: "Albanian Lek (ALL)",
@@ -210,5 +211,6 @@ function populateCurrencies() {
 populateCurrencies();
 
 convertBtn.addEventListener("click", convertCurrency);
+
 
 
